@@ -1,0 +1,47 @@
+*{
+    margin-top: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    /* min-height: 200vh; */
+    /* display: block; */
+    flex-direction: column;
+
+}
+/* .outerportion{
+    margin-top: 30px;
+    height: 500px;
+    background-color: blue;
+} */
+
+.displayerror{
+    height: 500px;
+}
+.restinfo{
+    padding-top: 20px;
+    display: block;
+    /* background-color: black; */
+    background-color: white;
+    height: 200px;
+    /* color: white; */
+    color: black;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.info{
+    display: flexbox;
+    /* width: 50%; */
+}
+
+.uploadedimg img{
+    display: flex;
+    float: right;
+    width: 25%;
+    height: 200px;
+    /* margin-top: -90px; */
+}

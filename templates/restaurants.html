@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/csswork/restaurants.css">
+    <title>Restaurants</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+
+    <!-- <div class="outerportion"> -->
+
+    {% for rest in allposts %}
+    <div class="restinfo">
+        <div class="info">
+            <div class="uploadedimg">
+                <img src="/media/{{rest.rimg}}">
+            </div>
+            <h3 class="heading"><a href="/restaurants/{{rest.slug}}">{{rest.title}}</h3></a>
+            <div class="type">{{rest.restaurantType}}</div>
+            <div class="openclose">{{rest.openclose}}</div>
+            <!-- <div class="datetime">{{rest.timeStamp}}</div> -->
+            <p class="content">{{rest.content}}</p>
+        </div>
+
+
+
+        <div class="restbtn">
+            <button class="r1" onclick="window.location.href = '/restaurants/{{rest.slug}}'">Explore</button>
+        </div>
+    </div>
+    {%endfor%}
+    {% endblock %}
+</body>
+
+</html>

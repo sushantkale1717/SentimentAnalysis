@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/csswork/search.css">
+    <link rel="stylesheet" href="/static/csswork/restaurants.css">
+    <title>Search</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+    <!-- <div class="outerportion"> -->
+
+        <h2 class="searchhead">Search results</h2>
+
+        {% if allPosts|length < 1 %} <div class="displayerror">
+            <p class="error">No results containing all your search terms were found.</p>
+
+            Your search - <b>{{query}}</b> - did not match. <br>
+            Suggestions :
+            <ul>
+                <li>Make sure that all words are spelled correctly.</li>
+                <li>Try different keywords.</li>
+                <li>Try fewer keywords.</li>
+                <li>Try more general keywords</li>
+            </ul>
+    </div>
+    {% endif %}
+    <!-- </div> -->
+    {% for rest in allPosts %}
+    <div class="restinfo">
+        <div class="info">
+            <div class="uploadedimg">
+                <img src="/media/{{rest.rimg}}">
+            </div>
+            <h3 class="heading"><a href="/restaurants/{{rest.slug}}">{{rest.title}}</h3></a>
+            <span class="type">{{rest.restaurantType}}</span>
+            <span class="openclose">{{rest.openclose}}</span>
+
+            <div class="datetime">{{rest.timeStamp}}</div>
+
+            <p class="content">{{rest.content}}</p>
+        </div>
+
+
+        <div class="restbtn">
+            <button class="r1" onclick="window.location.href = '/restaurants/{{rest.slug}}'">Explore</button>
+        </div>
+        <!-- <div class="restbtn"><a href="/restaurants/{{rest.slug}}" role="button" class="btn-primary">Explore</a></div> -->
+    </div>
+    <!-- </div> -->
+    {%endfor%}
+    {% endblock %}
+</body>
+
+</html>

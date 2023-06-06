@@ -1,0 +1,82 @@
+*{
+    margin-top: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+/* .outerportion{
+    height: 700px;
+    margin-top: 30px;
+} */
+
+.heading a{
+    text-decoration: none;
+    color: black;
+    /* color: whites; */
+}
+.restinfo{
+    /* padding-top: 20px; */
+    display: block;
+    /* background-color: black; */
+    /* background-color: white; */
+    background-color: whitesmoke;
+    /* line-height: 5px; */
+    height: 200px;
+    /* color: white; */
+    color: black;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.type{
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.openclose{
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.content{
+    margin: 5px;
+    margin-left: 0px;
+}
+.info{
+    display: flexbox;
+    /* color: white; */
+    /* width: 50%; */
+}
+
+.uploadedimg img{
+    display: flex;
+    float: right;
+    width: 25%;
+    height: 200px;
+    /* margin-top: -90px; */
+}
+
+
+.restbtn{
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    /* background-color: whitesmoke; */
+    background-color: black;
+    color:white;
+}
+.restbtn .r1{
+    text-align: center;
+    background-color: black;
+    /* border-radius: 10px; */
+    color: white;
+    width: 150px;
+    height: 40px;
+    /* margin-left: 5px; */
+    /* background-color: white; */
+    text-decoration: none ;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/csswork/login.css">
+    <title>LogIn</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+   
+    <div class="loginContainer">
+        <div class="contains">
+            <div class="login">
+                <form class="loginform" action="/login" method="post">
+                    <div class="formSec">
+                        <div class="headingsec">
+                            <h1 class="loginh1">Log In</h1>
+                        </div>
+                        <div class="logUserName">
+                            <input type="text" name="logUserName" placeholder="Username" id="logUserName" required>
+                        </div>
+
+                        <div class="logPasswordField">
+                            <input type="password" name="logPasswordField" placeholder="Password" id="logPasswordField"
+                                required>
+                        </div>
+
+                        <div class="loginBtn"><button class="submitBtn" type="submit">Log In</button><br></div>
+
+                        {% csrf_token %}
+                        <div class="forgotpassword">
+                            <p class="forgotpasswordpage"><a href="/password_reset">Forgot Password?</a></p>
+                        </div>
+                        <div class="opt">
+                        <hr>
+                        </div>
+                        <div class="transferSignup"><button class="transfertoSignup" type="button">
+                                <a href="/signup">Create new account</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

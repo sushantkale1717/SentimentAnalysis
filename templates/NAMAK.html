@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/csswork/NAMAK.css">
+    <title>NAMAK</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="allimages">
+        <div class="imageone">
+            <img src="/static/Img/namakone.png">
+        </div>
+        <section class="middlepart">
+            <div class="imagetwo">
+                <img src="/static/Img/earthplateimgtwo.png">
+            </div>
+
+            <div class="imagethree">
+                <img src="/static/Img/Screenshot (69).png">
+            </div>
+        </section>
+
+        <div class="imagefour">
+            <img src="/static/Img/namakfour.png">
+        </div>
+
+    </div>
+    <div class="details">
+        <h1>NAMAK</h1>
+        <p class="type">Chinese, Indian, International</p>
+
+        <span class="locationinfo"><i class="fa fa-map-marker"> Hotel Sahara Star, Opposite Domestic Airport, Vile Parle
+                East Sahara Star Hotel,
+                Mumbai 400099 India </i></span>
+        <span class="contactno"><i class="fa fa-phone"> +91 8291285770 </i></span>
+        <span class="website"><a
+                href="https://www.saharastar.com/dining/the-earth-plate-global-cuisine.html">Website</a>
+        </span>
+        <span class="drop">
+            <span class="timeinfo"> Time <i class="fa fa-info-circle"></i></span>
+            <span class="weeklyinfo">
+                <p class="days">
+                <h4 class="openning">Opening Hours</h4>
+                <hr>
+                Mon-Sun: 12:30 pm - 3:00 pm, 7:00 pm - 12:00 pm
+                <br>
+                </p>
+            </span>
+        </span>
+    </div>
+
+    <div class="sec1">
+        <div class="txt1">Analysis</div>
+        <iframe title="Report Section" width="1340" height="390.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjAwMjIyMDEtYjQ3My00OWE1LWI0ZjYtNjkwMGEyMGQ5ZDA3IiwidCI6IjhjZWI4ZDk2LWRhMTEtNGY0Zi1iYjk0LTIwZDU3OGEzNDMxZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <p class="note">Note : Analysis is done by collecting the reviews between 2019-2023</p>
+    </div>
+
+    <div class="alldetails">
+        <div class="sec2">
+            <div class="txt2">Details</div>
+
+            <div class="container">
+                <div class="pricerange">PRICE RANGE</div>
+                <div class="rangebetween">₹2,500 - ₹3,500</div>
+                <div class="cuisines">CUISINES</div>
+                <div class="cuisinestype">Indian, Chinese, International, Asian</div>
+                <div class="meals">MEALS</div>
+                <div class="mealsinclude">Breakfast, Lunch, Dinner, Brunch, Drinks</div>
+                <div class="specialdiets">SPECIAL DIETS</div>
+                <div class="diets">Vegetarian Friendly, Vegan Options, Halal, Gluten Free Options</div>
+            </div>
+        </div>
+        <div class="sec3">
+            <div class="txt2">About</div>
+            <div class="about">
+                <p class="aboutrest">
+                    Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which
+                    takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens
+                    of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit
+                    for a king.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="moreinfo">
+        <div class="heading">More Info</div>
+        <div class="featurecontainer">
+            <div class="morefeaturespartone">
+                <div class="Wifi">
+                    <p class="item1">Wifi</p>
+                </div>
+                <div class="fullbaravailable">
+                    <p class="item2">Full Bar Available</p>
+                </div>
+                <div class="familyfriendly">
+                    <p class="item3">Family Friendly</p>
+                </div>
+                <div class="happyhours">
+                    <p class="item4">Happy Hours</p>
+                </div>
+                <div class="indoorseating">
+                    <p class="item5">Indoor Seating</p>
+                </div>
+            </div>
+            <div class="morefeaturesparttwo">
+                <div class="tablebooking">
+                    <p class="item6">Table Booking Recommended</p>
+                </div>
+                <div class="wheelchairaccessible">
+                    <p class="item7">Wheelchair Accessible</p>
+                </div>
+                <div class="valetparking">
+                    <p class="item8">Valet Parking Available</p>
+                </div>
+                <div class="luxurydining">
+                    <p class="item9">Luxury Dining</p>
+                </div>
+                <div class="Star">
+                    <p class="item10">4/5 Star</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="comparepage">
+        <button class="comparebtn" onclick="window.location.href = 'restaurant_analysis_4'">Compare</button>
+        <!-- <button class="comparebtn"><a href="restaurant_analysis_4">Compare</a></button> -->
+    </div>
+    {% endblock %}
+</body>
+
+</html>

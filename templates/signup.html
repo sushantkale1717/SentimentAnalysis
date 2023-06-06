@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/csswork/signup.css">
+    <title>SignUp</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="signupContainer">
+        
+        <div class="rightside">
+            <div class="signUp">
+                <form class="formOne" action="/signup" method="post">
+                    <div class="formSec">
+                        <div class="headingsec">
+                        <h1 class="signUph1">Welcome!</h1>
+                        <p class="signupPara">Create a new account.</p>
+                    </div>
+
+                        <span class="firstName">
+                            <!-- <label for="firstName">First Name</label><br> -->
+                            <input type="text" name="firstName" placeholder="First Name" id="firstName" pattern="[A-Za-Z]{0,}" required>
+                        </span>
+
+                        <span class="lastName">
+                            <!-- <label for="lastName">Last Name</label><br> -->
+                            <input type="text" name="lastName" placeholder="Last Name" id="lastName" pattern="[A-Za-Z]{0,}" required>
+                        </span>
+
+
+                        <div class="userName">
+                            <!-- <label for="userName">Username</label><br> -->
+                            <input type="text" name="userName" placeholder="Username" id="userName" required>
+                        </div>
+
+                        <div class="emailField">
+                            <!-- <label for="emailField">Email</label><br> -->
+                            <input type="email" name="emailField" placeholder="Email" id="emailField" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        </div>
+
+                        <div class="passwordField">
+                            <!-- <label for="passwordField">Password</label><br> -->
+                            <input type="password" name="passwordField" placeholder="Password" id="passwordField" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 6 or more characters"
+                                required>
+
+                        </div>
+
+                        <!-- <div class="confirmPasswordField">
+                        <label for="confirmPasswordField">Confirm Password</label><br>
+                        <input type="password" name="confirmPasswordField" id="confirmPasswordField" required>
+                    </div> -->
+
+                        <div class="buttonOne"><button class="submitBtn" type="submit">Sign Up</button><br></div>
+
+                        {% csrf_token %}
+                        <div class="trasferControl">
+                            <p>Already have an account? <a href="/login">Log In</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F2EDD7FF;
+    width: 100%;
+}
+.outer {
+
+    width: 100%;
+}
+
+.outer1{
+    display: block;
+    margin: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: white; 
+    padding-top: 120px; 
+}  
+
+.contactsec {
+    width: 100%;
+    color: black;
+    text-align: center;
+    background-color: white;
+    /* background-color: #F2EDD7FF; */
+    height: 300px;
+    font-size: 30px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: system-ui;
+    font-weight: bold;
+    padding-top: 30px;
+
+}
+
+
+.para {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contactinfo {
+    width: 100%;
+}
+
+.container {
+    width: 100;
+    display: flex;
+    justify-content: center;
+    /* background-color: #ddd; */
+}
+
+.mailsection {
+    /* background-color: white; */
+    background-color: black;
+    color: white;
+    /* color: black; */
+    border-color: black;
+    border-color: white;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 340px;
+    margin-top: -100px;
+    margin-bottom: 20px;
+
+    padding-top: 20px;
+}
+
+.emailsymbol {
+    align-items: center;
+    height: 45px;
+    background-color: rgb(225, 222, 222);
+}
+
+.emailsymbol img {
+    margin-top: -2px;
+    align-content: center;
+    width: 50px;
+}
+
+.mailinfo p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+   
+    font-family: system-ui;
+}
+
+.address p{
+    text-align: center;
+    margin-top: 10px;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+/* .linkedinsection{
+    height: 270px;
+    width: 332px;
+    background-color: white;
+    text-align: center;
+    display: block;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: -100px;
+    padding-top: 20px;
+}
+
+
+.profile-badge__header{
+    width: 80%;
+    height: 300px;
+} */

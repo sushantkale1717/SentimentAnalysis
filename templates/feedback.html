@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/csswork/feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Feedback</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    
+    <div class="outerpart">
+        <div class="innerpart">
+            <h1 class="feedbackheading">Drop us a feedback</h1>
+
+            <form class="yourfeedback" action="/feedback" method="post">
+                
+                <span class="yourname">
+                    <input type="text" name="yourname" placeholder="Your Name" id="yourname" pattern="[A-Za-z]{0,}" title="Please enter a string" required>
+                </span>
+
+                <span class="youremail">
+                    <input type="email" name="youremail" placeholder="Your Email" id="youremail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </span>
+                <!-- <div class="questions"> -->
+                        <!-- <p class="question1">Did you satisfied with our analysis?</p>
+                        <span><input type="radio" id="option1" value="Yes" required></span>
+                        <label for="option1">Yes</label>
+
+                        <span><input type="radio" id="option2" value="No" required></span>
+                        <label for="option2">No</label> -->
+                        
+                        
+                        <!-- <p class="ratingquestion">How satisfied are you with our website?</p>
+                        <div class="rate">
+                            <input type="radio" name="rating" id="rating10" value="5" required /><label for="rating10" title="5"></label>
+                            <input type="radio" name="rating" id="rating9" value="4.5" required /><label for="rating9" title="4.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating8" value="4" required /><label for="rating8" title="4"></label>
+                            <input type="radio" name="rating" id="rating7" value="3.5" required /><label for="rating7" title="3.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating6" value="3" required /><label for="rating6" title="3"></label>
+                            <input type="radio" name="rating" id="rating5" value="2.5" required /><label for="rating5" title="2.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating4" value="2" required /><label for="rating4" title="2"></label>
+                            <input type="radio" name="rating" id="rating3" value="1.5" required /><label for="rating3" title="1.5" class="half"></label>
+                            <input type="radio" name="rating" id="rating2" value="1" required /><label for="rating2" title="1"></label>
+                            <input type="radio" name="rating" id="rating1" value="0.5" required /><label for="rating1" title="0.5" class="half"></label>
+                        </div> -->
+
+                <!-- </div> -->
+
+                <div class="writefeedback">
+                    <p class="questions"></p>
+                    <textarea id="writefeedback" name="writefeedback" rows="6" cols="50" placeholder="Your suggestion" required></textarea>
+                </div>
+
+                {% csrf_token %}
+                <div class="submitButton"><button class="submitFeedback" type="submit">Submit</button></div>
+            </form>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+
+</html>

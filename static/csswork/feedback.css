@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+.outerpart{
+    display: flex;
+    height: 640px;
+    color: white;
+    background-color: #F2EDD7FF;
+}
+
+.innerpart{
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-left:25%;
+    height: 500px;
+    width: 50%;
+    /* color: white; */
+    background-color: white;
+    color: black;
+}
+.feedbackheading{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+    /* color: white; */
+}
+
+.yourfeedback{
+    margin-left: 50px;
+    margin-right: 50px;
+    
+
+}
+.yourname input{
+    /* border-color: white; */
+    border-color: black;
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+    height: 30px;
+    text-indent: 0.3cm;
+}
+
+.youremail input{
+    margin-left: 10px;
+    width: 200px;
+    /* border-color: white; */
+    border-color: black;
+    border-radius: 5px;
+    height: 30px;
+    text-indent: 0.3cm;
+}
+
+/* .ratingquestion{
+    margin-top: 20px;
+}
+
+.rating{
+    margin-top: 20px;
+}
+
+.rate > input{
+    display: none;
+}
+
+.rate{
+    display: inline-block;
+    border: 0;
+}
+
+.rate > label{
+    float: right;
+} */
+
+/* Start showing the stars */
+
+/* .rate >label::before{
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 1.1rem;
+    content: "\f005";
+    margin: 0;
+    padding: 0.3rem .2rem;
+    cursor: pointer;
+
+} */
+
+/* Half star */
+
+/* .rate .half::before{
+    content: "\f089";
+    position: absolute;
+    padding-right: 0;
+} */
+
+/* Click and hover */
+/* input:checked ~ label, label:hover ~ label{
+    color: #ffb503;
+} */
+
+/* Hover highlight */
+/* input:checked + label:hover, input:checked ~ label:hover, input:checked ~ label:hover ~ label,
+label:hover ~ input:checked ~ label{
+    color: #cc9000;
+} */
+
+.writefeedback{
+    margin-top: 20px;
+}
+
+textarea{
+    border-color: black;
+    text-indent: 5px;
+    width: 491px;
+    height: 127px;
+}
+
+.submitButton{
+    margin-top: 10px;
+}
+
+.submitFeedback{
+    height: 30px;
+    width: 120px;
+    /* color: black; */
+    /* background-color: white; */
+    background-color: black;
+    color: white;
+    border-color: black;
+    /* border-color: white; */
+    border-radius: 5px;
+    cursor: pointer;
+}

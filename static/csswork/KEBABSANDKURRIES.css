@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.allimages{
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 12px;
+    width: auto;
+    height: 400px;
+    display: flex;
+}
+.middlepart{
+    width: 30%;
+    height: 400px;
+    /* height: 300px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageone{
+    width: 100%;
+}
+.imageone img{
+    width: 100%;
+    height: 100%;
+
+}
+.imagetwo img{
+    /* height: 150px; */
+    height: 200px;
+    width: 100%;
+}
+
+.imagethree img{
+    /* height: 148px; */
+    height: 198px;
+    width: 100%;
+}
+
+.imagefour{
+    width: auto;
+    height: 400px;
+}
+
+.imagefour img{
+    width: auto;
+    height: 400px;
+
+}
+
+.type{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.details{
+    margin-bottom: 12px;
+    margin-left: 5%;
+}
+.locationinfo{
+    padding-right: 6px;
+    border-right: 1px solid gray;
+
+}
+
+.contactno{
+    padding-left: 5px;
+    padding-right: 6px;
+    border-right: 1px solid gray;
+}
+
+.website{
+    padding-left: 5px;
+    padding-right: 6px;
+    border-right: 1px solid gray;
+}
+
+.website a{
+    text-decoration: underline;
+    color: black;
+}
+
+.menulist{
+    padding-left: 7px;
+    padding-right: 6px;
+    border-right: 1px solid gray;
+}
+
+.menulist a{
+    text-decoration: underline;
+    color: black;
+}
+
+.drop{
+    color: black;
+    overflow: hidden;
+}
+.timeinfo{
+    padding-left: 5px;
+    padding-right: 6px;
+}
+
+.weeklyinfo{
+    float: left;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 800px;
+    /* min-width: 200px; */
+    background-color: black;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.weeklyinfo p {
+    float: left;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop:hover .weeklyinfo {
+    display: block;
+}
+
+.weeklyinfo:hover{
+    background-color: #ddd;
+}
+
+.sec1{
+    height: 450px;
+    margin: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 12px;
+    /* border-radius: 5px; */
+    background-color: whitesmoke;
+    /* border: 1px solid black; */
+}
+
+.alldetails{
+    display: flex;
+    height: 450px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 12px;
+}
+
+.sec2{
+    display: block;
+    margin: 10px;
+    margin-left: 0;
+    padding: 12px;
+    width: 50%;
+    /* width: 100%; */
+    /* border-radius: 5px; */
+    background-color: whitesmoke;
+    /* border: 1px solid black; */
+}
+.about{
+    margin-top: 20px;
+}
+.sec3{
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 12px;
+    width: 50%;
+    background-color: whitesmoke;
+}
+
+.txt1{
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.txt2{
+    font-size: larger;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.txt3{
+    font-size: larger;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.pricerange{
+    font-size: small;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.rangebetween{
+    padding: 12px;
+    padding-bottom: 20px;
+}
+
+.cuisines{
+    font-size: small;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.cuisinestype{
+    padding: 12px;
+}
+
+.meals{
+    font-size: small;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.mealsinclude{
+    padding: 12px;
+}
+
+.specialdiets{
+    font-size: small;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.diets{
+    padding: 12px;
+}
+
+.moreinfo{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: whitesmoke;
+}
+
+.heading{
+    margin: 12px;
+    margin-bottom: 3px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: system-ui;
+
+}
+
+.featurecontainer{
+    display: flex;
+}
+
+.morefeaturespartone{
+    padding: 12px;
+    
+}
+
+.morefeaturesparttwo{
+    margin-left: 15px;
+    padding: 12px;
+}
+
+.morefeaturespartone div{
+    margin-bottom: 15px;
+}
+
+.morefeaturesparttwo div{
+    margin-bottom: 15px;
+}
+
+.comparebtn {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.comparebtn a {
+    color: white;
+    text-decoration: none;
+}
+
+.note{
+    font-weight: bold;
+}

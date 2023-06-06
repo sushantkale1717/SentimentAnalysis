@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #ddd; */
+}
+
+body{
+    width: 100%;
+}
+.signupContainer{
+    display: flex;
+    height: 700px;
+    width: 100%;
+    /* margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: white;
+    background-color: black; */
+    color: white;
+    background-color: #F2EDD7FF;
+}
+
+.headingsec{
+    font-family: system-ui;
+    margin-bottom: 20px;
+}
+.signUph1 h1{
+    font-family: system-ui;
+    margin-top: 50px;
+    border-radius: 30px;
+    color: black;
+    /* color: white; */
+}
+
+.signupPara p{
+    color: black;
+    /* color: white; */
+    margin-bottom: 20px;
+    
+}
+.rightside{
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    /* width: 100%; */
+    width: 50%;
+    /* color: white; */
+    /* background-color: #755139FF; */
+    background-color: white;
+    color: black;
+    /* float: right;
+    height: 500px;
+    width: 50%;
+    background-color: white;
+    color: black; */
+    /* border: 5px solid black; */
+}
+
+.signUp{
+    height: 400px;
+    text-align: center;
+    /* background-color: #755139FF; */
+    background-color: white;
+
+}
+
+.formOne{
+    background-color: white;
+    /* background-color: #755139FF; */
+}
+
+.formSec{
+    background-color: white;
+    /* background-color: #755139FF; */
+    height: 400px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 50%;
+    /* margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 130px; */
+}
+
+.formSec input{
+    background-color: white;
+}
+
+.formSec p{
+    background-color: white
+    /* background-color: #755139FF; */
+}
+
+.fullName{
+    display: flex;
+    background-color: white;
+    /* background-color: #755139FF; */
+}
+
+.lastName{
+    margin-left: 11px;  
+}
+
+.firstName input{
+    border-color: black;
+    /* border-color: white; */
+    border-radius: 5px;
+    height: 35px;
+    width: auto;
+    text-indent: 0.3cm;
+}
+
+.lastName input{
+    border-radius: 5px;
+    border-color: black;
+    /* border-color: white; */
+    width:auto;
+    height: 35px;
+    text-indent: 0.3cm;
+    
+}
+
+.userName{
+    background-color: white;
+    /* background-color: #755139FF; */
+}
+
+.userName input{
+    border-color: black;
+    /* border-color: white; */
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 35px;
+    width: 345px;
+    text-indent: 0.3cm;
+}
+
+.emailField{
+    background-color: white;
+    /* background-color: #755139FF; */
+}
+
+.emailField input{
+    border-color: black;
+    /* border-color: white; */
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 35px;
+    width: 345px;
+    text-indent: 0.3cm;
+}
+
+.passwordField{
+    background-color: white;
+    /* background-color: #755139FF; */
+}
+
+.passwordField input{
+    border-color: black;
+    /* border-color: white; */
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 35px;
+    width: 345px;
+    text-indent: 0.3cm;
+}
+
+/* .confirmPasswordField input{
+    width:auto;
+    height: 30px;
+    width: 35%;
+
+} */
+
+.buttonOne{
+    background-color: white;
+    /* background-color: #755139FF; */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submitBtn{
+    font-family: system-ui;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    /* border-color: white; */
+    border-color: black;
+    cursor: pointer;
+    /* color: black; */
+    color: white;
+    background-color: black;
+    /* background-color: white; */
+}
+
+.trasferControl{
+    font-family: system-ui;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.trasferControl a{
+    /* text-decoration: none; */
+    color: black;
+    background-color: white;
+    /* background-color: #755139FF; */
+}

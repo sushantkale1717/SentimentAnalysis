@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/csswork/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <title>FIND</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    
+    <!-- <h1 class="searchpara">Discover the best restaurants in Mumbai</h1> -->
+    <div class="mainsection">
+        <!-- <div class="mainimg"><img src="/static/Img/13198.jpg" id="slideImg"></div> -->
+        <!-- <div class="rightMain">
+            <div class="contains">
+                    <p class="searchpara">Discover the best restaurants in Mumbai</p>
+
+                    <input class="search-field" type="text" placeholder="Search here" name="search" id="search">
+
+                    <input class="location-field" type="text" placeholder="Location" name="location" id="location">
+
+                    <button class="btn_btns1" type="submit">Search</button>
+                </div>
+            </div> -->
+
+            <div class="startsec">
+                <!-- <p class="searchpara">Discover the best restaurants in Mumbai</p> -->
+                <h1 class="searchpara">Discover the best restaurants in Mumbai</h1>
+
+                <form class="searchfunctionality" method="get" action="/search">
+                    <input class="search-field" type="search" placeholder="Search here" name="query" id="query">
+                    <button class="btn_btns1" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
+            </div>
+        </div>
+        <!-- <div class="img"><img src="/static/Img/Screenshot (18).png"></div> -->
+    </div>
+
+    <!-- <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var imagesForSlide = new Array(
+            "/static/Img/slidersimg.jpg",
+            "/static/Img/slidersimg0.jpg"
+        );
+
+        var len = imagesForSlide.length;
+        var i = 0;
+
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideImg.src = imagesForSlide[i];
+            i++;
+            setTimeout('slider()', 5000);
+        }
+    </script> -->
+
+
+    <div class="middlesec">
+        <!-- <div class="sec1"></div> -->
+        <div class="first">
+            <div class="txt1">Search Restaurants</div>
+        </div>
+
+        <!-- <div class="sec2"></div> -->
+        <div class="second">
+            <div class="txt2">Check Analysis</div>
+        </div>
+
+        <!-- <div class="sec3"></div> -->
+        <div class="third">
+            <div class="txt3">Compare</div>
+        </div>
+    </div>
+
+    <div class="endsection">
+        <div class="explore">
+            <div class="ads">
+                <div class="adshead">
+                    <h2 class="heading">EXPLORE RESTAURANTS WITH THE ANALYSIS AND ALL THE INFORMATION</h2>
+                </div>
+                <P class="adspara">
+                    Just check the analysis and decide what to do!<br>
+                    Isn't it simple?
+                </P>
+                <div class="explorepage">
+                    <button class="explorebtn1" onclick="window.location.href = 'restaurants'">Explore</button>
+                    <!-- <button class="explorebtn"><a href="restaurants">Explore</a></button> -->
+                </div>
+            </div>
+        </div>
+
+        <span class="feedbackform">
+            <img src="/static/Img/Screenshot (45).png">
+        </span>
+
+        <div class="feedbackad">
+            <h2 class="feedbackreq">PLEASE SHARE YOUR FEEDBACK WITH US SO THAT WE CAN IMPROVE OUR WEBSITE</h2>
+            <button class="feedbackbtn" onclick="window.location.href = 'feedback'">Give us a feedback</button></div>
+            <!-- <button class="feedbackbtn"><a href="feedback">Give us a feedback</button></a> -->
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

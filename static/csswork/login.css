@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #F2EDD7FF;
+    width: 100%;
+}
+
+.loginContainer{
+    display: flex;
+    /* height: 500px; */
+    width: 100%;
+    color: white;
+    background-color: #F2EDD7FF;
+}
+
+.headingsec{
+    font-family: system-ui;
+    margin-bottom: 20px;
+}
+
+.loginh1 h1{
+    font-family: system-ui;
+    /* border-radius: 30px; */
+    color: black;
+    /* color: white; */
+}
+
+.contains{
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 50%;
+    /* width: 100%; */
+    background-color: white;
+    color: black;
+}
+
+.login{
+    height: 400px;
+    text-align: center;
+    /* background-color: #755139FF; */
+    background-color: white;
+
+}
+
+.loginform{
+    background-color: white;
+    /* background-color: #755139FF; */
+}
+
+.formSec{
+    background-color: white;
+    /* background-color: #755139FF; */
+    height: 400px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 60%;
+}
+
+.formSec input{
+    background-color: white;
+}
+
+.logUserName{
+    background-color: white;
+}
+
+.logUserName input{
+    border-color: black;
+    /* border-color: white; */
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 35px;
+    width: 250px;
+    text-indent: 0.3cm;
+}
+
+.logPasswordField{
+    background-color: white;
+    /* background-color: #755139FF; */
+}
+
+.logPasswordField input{
+    border-color: black;
+    /* border-color: white; */
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 35px;
+    width: 250px;
+    text-indent: 0.3cm;
+}
+
+
+.loginBtn{
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submitBtn{
+    font-family: system-ui;
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    border-color: black;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.forgotpassword{
+    font-family: system-ui;
+    margin-top: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.forgotpassword a{
+    /* text-decoration: none; */
+    color: rgb(46, 72, 239);
+    background-color: white;
+}
+
+.transferSignup{
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.transfertoSignup{
+    font-family: system-ui;
+    height: 30px;
+    width: 170px;
+    border-radius: 5px;
+    border-color: black;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.transfertoSignup a{
+    text-decoration: none;
+    color: white;
+
+}

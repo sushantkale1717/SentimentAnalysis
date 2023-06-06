@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/csswork/EAST-EAST_ASIAN_SPICE_TRAIL.css">
+    <title>EAST-EAST ASIAN SPICE TRAIL</title>
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="allimages">
+        <div class="imageone">
+            <img src="/static/Img/indexfirst.png">
+        </div>
+        <section class="middlepart">
+            <div class="imagetwo">
+                <img src="/static/Img/indexsecond.png">
+            </div>
+
+            <div class="imagethree">
+                <img src="/static/Img/indexthree.png">
+            </div>
+        </section>
+
+        <div class="imagefour">
+            <img src="/static/Img/indexfourth.png">
+        </div>
+
+    </div>
+    <div class="details">
+        <h1>EAST-EAST ASIAN SPICE TRAIL</h1>
+        <p class="type">Chinese, Japanese, Asian</p>
+        <!-- <span class="locationinfo"><p class="location">Vile Parle East, Hotel Sahara Star Opp. Domestic Airport, Mumbai 400099 India</p></span>
+        <span class="contactno"><p class="contact">+91 22 3989 5000</p></span> -->
+
+        <span class="locationinfo"><i class="fa fa-map-marker"> Vile Parle East, Hotel Sahara Star Opp. Domestic
+                Airport, Mumbai 400099 India </i></span>
+        <span class="contactno"><i class="fa fa-phone"> +91 22 3989 5000 </i></span>
+        <span class="website"><a href="https://www.saharastar.com/dining/east-east-asian-spice-trail.html">Website</a>
+        </span>
+        <span class="drop">
+            <span class="timeinfo"> Opens at 7PM <i class="fa fa-info-circle"></i></span>
+            <span class="weeklyinfo">
+                <p class="days">
+                    <h4 class="openning">Opening Hours</h4>
+                    <hr>
+                     Monday: Closed <br>
+                     Tue-Sun: 7:00 pm - 12:00 midnight
+                </p>
+            </span>
+        </span>
+    </div>
+
+        <div class="sec1">
+            <div class="txt1">Analysis</div>
+            <iframe title="Report Section" width="1340" height="390.5" src="https://app.powerbi.com/view?r=eyJrIjoiZDJhMzgyY2MtNTRlMS00NDBmLTk0NTAtNTIzM2M5NDFkNThmIiwidCI6IjhjZWI4ZDk2LWRhMTEtNGY0Zi1iYjk0LTIwZDU3OGEzNDMxZSJ9" frameborder="0" allowFullScreen="true"></iframe>
+            <p class="note">Note : Analysis is done by collecting the reviews between 2019-2023</p>
+        </div>
+        <div class="alldetails">
+        <div class="sec2">
+            <div class="txt2">Details</div>
+            <div class="container">
+                <div class="pricerange">PRICE RANGE</div>
+                <div class="rangebetween">₹1,450 - ₹2,500</div>
+                <div class="cuisines">CUISINES</div>
+                <div class="cuisinestype">Asian, Chinese, Japanese, Thai</div>
+                <div class="meals">MEALS</div>
+                <div class="mealsinclude">Lunch, Dinner, Drinks</div>
+                <div class="features">FEATURES</div>
+                <div class="featuresinclude">
+                    Takeout, Reservations, Seating, Parking Available, Validated Parking, Valet
+                    Parking, Highchairs Available, Wheelchair Accessible, Serves Alcohol, Wine and Beer, Accepts
+                    American Express, Accepts Mastercard, Accepts Visa, Accepts Credit Cards, Table Service, Outdoor
+                    Seating, Street Parking, Television, Full Bar, Jazz Bar
+                </div>
+            </div>
+        </div>
+        <div class="sec3">
+            <div class="txt2">About</div>
+            <div class="about">
+                <p class="aboutrest">
+                    EAST, East Asian Spice Trail - Give your taste buds a taste of the far East, abbreviated as EAST offer aficionados a rich experience of Pan Asian cuisine in an ambiance resembling the culture of Asia. EAST is designed to give you an authentic experience, its live stations and tepanyaki grills recreate the splendor of Asian cuisine. Savor the mysteries of Asia from China, Thailand, Japan & other parts of South Asia as the restaurant will embark you on a journey that has a high degree of homogeneity and authenticity.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="moreinfo">
+        <div class="heading">More Info</div>
+        <div class="featurecontainer">
+            <div class="morefeaturespartone">
+                <div class="fullbaravailable">
+                    <p class="item1">Full Bar Available</p>
+                </div>
+                <div class="valetparking">
+                    <p class="item2">Valet Parking</p>
+                </div>
+                <div class="Star">
+                    <p class="item3">4/5 Star</p>
+                </div>
+                <div class="tablebooking">
+                    <p class="item4">Table Booking Recommended</p>
+                </div>
+            </div>
+            <div class="morefeaturesparttwo">
+                <div class="happyhours">
+                    <p class="item5">Happy Hours</p>
+                </div>
+                <div class="familyfriendly">
+                    <p class="item6">Family Friendly</p>
+                </div>
+                <div class="luxurydining">
+                    <p class="item7">Luxury Dining</p>
+                </div>
+                <div class="indoorseating">
+                    <p class="item8">Indoor Seating</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="comparepage">
+        <button class="comparebtn" onclick="window.location.href = 'restaurant_analysis_1'">Compare</button>
+        <!-- <button class="comparebtn"><a href="restaurant_analysis_1">Compare</a></button> -->
+    </div>
+    {% endblock %}
+</body>
+
+</html>
